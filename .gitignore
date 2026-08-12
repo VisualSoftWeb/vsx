@@ -1,0 +1,10 @@
+node_modules/
+dist/
+server/node_modules/
+server/.env
+server/data/
+server/contatos.db
+server/contatos.db-shm
+server/contatos.db-wal
+Captura de tela 2026-07-18 165427.png
+plano-transformacao-evento-servicos.md

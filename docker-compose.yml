@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    container_name: ai-lecture-landing
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - DB_PATH=./data/contatos.db
+    volumes:
+      - db-data:/app/server/data
+    restart: unless-stopped
+
+volumes:
+  db-data:
