@@ -7,10 +7,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "start": "node server/index.js",
     "server": "node server/index.js",
     "dev:all": "powershell -Command \"Start-Process -NoNewWindow -FilePath 'npm' -ArgumentList 'run server' -WorkingDirectory $(Get-Location); npm run dev\""
   },
   "dependencies": {
+    "better-sqlite3": "^11.9.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "framer-motion": "^12.10.0",
     "lucide-react": "^0.510.0",
     "react": "^19.1.0",
