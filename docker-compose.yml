@@ -5,11 +5,12 @@ services:
     container_name: vsxai
     restart: unless-stopped
     ports:
+      - "80:80"
       - "3001:3001"
     security_opt:
       - no-new-privileges:true
     healthcheck:
-      test: ["CMD", "wget", "-q", "-O", "-", "http://localhost:3001/"]
+      test: ["CMD", "wget", "-q", "-O", "-", "http://localhost/"]
       interval: 30s
       timeout: 5s
       retries: 3
