@@ -1,10 +1,16 @@
 node_modules
-server/node_modules
 dist
-server/.env
-server/contatos.db
-server/contatos.db-shm
-server/contatos.db-wal
 .git
-*.md
-Captura de tela 2026-07-18 165427.png
+.gitignore
+*.log
+vite-dev.log
+.env
+.env.example
+Caddyfile
+Dockerfile
+docker-compose.yml
+deploy.sh
+.dockerignore
+README*
+plano-transformacao-evento-servicos.md
+Captura de tela *.png

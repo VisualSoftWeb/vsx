@@ -1,5 +1,8 @@
 node_modules/
 dist/
+.env
+*.log
+vite-dev.log
 server/node_modules/
 server/.env
 server/data/

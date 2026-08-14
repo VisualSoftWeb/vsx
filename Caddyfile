@@ -1,0 +1,22 @@
+{
+	email {$ACME_EMAIL:admin@vsxai.com.br}
+}
+
+{$DOMAIN:vsxai.com.br} {
+	root * /srv
+	encode gzip zstd
+	file_server
+
+	@static {
+		path *.js *.css *.svg *.png *.jpg *.jpeg *.webp *.avif *.ico *.woff *.woff2 *.ttf
+	}
+	header @static Cache-Control "public, max-age=31536000, immutable"
+	header Cache-Control "no-cache"
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+	}
+}

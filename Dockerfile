@@ -1,18 +1,11 @@
-FROM node:20-slim AS build
+FROM node:22-alpine AS build
 WORKDIR /app
-COPY package.json package-lock.json ./
+COPY package*.json ./
 RUN npm ci
 COPY . .
 RUN npm run build
 
-FROM node:20-slim AS runtime
-WORKDIR /app
-ENV NODE_ENV=production
-COPY package.json package-lock.json ./
-RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ \
-  && npm ci --omit=dev \
-  && rm -rf /var/lib/apt/lists/*
-COPY server/ ./server/
-COPY --from=build /app/dist ./dist
-EXPOSE 3001
-CMD ["node", "server/index.js"]
+FROM caddy:2-alpine
+COPY --from=build /app/dist /srv
+COPY Caddyfile /etc/caddy/Caddyfile
+EXPOSE 80 443

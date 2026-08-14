@@ -1,15 +1,27 @@
 services:
-  app:
+  vsxai:
     build: .
-    container_name: ai-lecture-landing
-    ports:
-      - "3001:3001"
-    environment:
-      - PORT=3001
-      - DB_PATH=./data/contatos.db
-    volumes:
-      - db-data:/app/server/data
+    image: vsxai:latest
+    container_name: vsxai
     restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN:-vsxai.com.br}
+      ACME_EMAIL: ${ACME_EMAIL:-admin@vsxai.com.br}
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "-", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
 
 volumes:
-  db-data:
+  caddy_data:
+  caddy_config:
