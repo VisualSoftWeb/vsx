@@ -6,13 +6,6 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"
-      - "443:443"
-    environment:
-      DOMAIN: ${DOMAIN:-vsxai.com.br}
-      ACME_EMAIL: ${ACME_EMAIL:-admin@vsxai.com.br}
-    volumes:
-      - caddy_data:/data
-      - caddy_config:/config
     security_opt:
       - no-new-privileges:true
     healthcheck:
@@ -21,7 +14,3 @@ services:
       timeout: 5s
       retries: 3
       start_period: 10s
-
-volumes:
-  caddy_data:
-  caddy_config:

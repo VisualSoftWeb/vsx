@@ -1,8 +1,4 @@
-{
-	email {$ACME_EMAIL:admin@vsxai.com.br}
-}
-
-{$DOMAIN:vsxai.com.br} {
+:80 {
 	root * /srv
 	encode gzip zstd
 	file_server
@@ -13,7 +9,6 @@
 	header @static Cache-Control "public, max-age=31536000, immutable"
 	header Cache-Control "no-cache"
 	header {
-		Strict-Transport-Security "max-age=31536000; includeSubDomains"
 		X-Content-Type-Options "nosniff"
 		X-Frame-Options "DENY"
 		Referrer-Policy "strict-origin-when-cross-origin"
