@@ -6,7 +6,6 @@ dist
 vite-dev.log
 .env
 .env.example
-Caddyfile
 Dockerfile
 docker-compose.yml
 deploy.sh
