@@ -1,15 +1,14 @@
 import { MessageCircle } from 'lucide-react'
 
-const servicos = [
-  { label: 'Automação com IA', msg: 'Olá! Tenho interesse no serviço de Automação com IA.' },
-  { label: 'Chatbots & Assistentes', msg: 'Olá! Tenho interesse no serviço de Chatbots & Assistentes.' },
-  { label: 'Análise de Dados', msg: 'Olá! Tenho interesse no serviço de Análise de Dados.' },
+const services = [
+  { label: 'Agentes de IA Conversacional', msg: 'Olá! Tenho interesse no serviço de Agentes de IA Conversacional.' },
+  { label: 'Assistente Administrativo Remoto', msg: 'Olá! Tenho interesse no serviço de Assistente Administrativo Remoto.' },
   { label: 'Consultoria em IA', msg: 'Olá! Tenho interesse no serviço de Consultoria em IA.' },
-  { label: 'Sistemas e Sites', msg: 'Olá! Tenho interesse no serviço de Sistemas e Sites.' },
+  { label: 'Sistemas, Sites e Aplicativos', msg: 'Olá! Tenho interesse no serviço de Sistemas, Sites e Aplicativos.' },
   { label: 'Outro', msg: 'Olá! Tenho interesse em um serviço.' },
 ]
 
-const WHATSAPP = '5521973238344'
+const WHATSAPP_NUMBER = '5521973238344'
 
 export default function CTA() {
   return (
@@ -29,10 +28,10 @@ export default function CTA() {
         <div className="bg-ai-card/80 border border-ai-border/60 rounded-2xl p-8 backdrop-blur-sm max-w-md mx-auto">
           <p className="text-white font-semibold mb-6">Qual serviço te interessa?</p>
           <div className="space-y-3">
-            {servicos.map((s) => (
+            {services.map(s => (
               <a
                 key={s.label}
-                href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(s.msg)}`}
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(s.msg)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-ai-dark hover:bg-ai-purple/30 border border-ai-border hover:border-ai-cyan/50 text-white font-medium px-5 py-3.5 rounded-xl transition-all inline-flex items-center justify-center gap-3 group"

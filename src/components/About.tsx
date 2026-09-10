@@ -1,30 +1,20 @@
-import { Cpu, MessageSquareText, BarChart3, Globe, Image } from 'lucide-react'
+import { MessageSquareText, Briefcase, Globe } from 'lucide-react'
 
 const items = [
   {
-    icon: Cpu,
-    title: 'Automação com IA',
-    desc: 'Automatize processos repetitivos com Inteligência Artificial, reduzindo custos e erros operacionais.',
-  },
-  {
     icon: MessageSquareText,
-    title: 'Agentes & Assistentes',
-    desc: 'Agentes de IA autônomos e assistentes virtuais inteligentes para atendimento, agendamento, suporte e vendas. Tenha um funcionário agentico 24h por dia e 7 dias por semana.',
+    title: 'Agentes de IA Conversacional',
+    desc: 'Agentes de IA autônomos e inteligentes para atendimento, agendamento, suporte e vendas. Tenha um funcionário agêntico 24h por dia e 7 dias por semana.',
   },
   {
-    icon: BarChart3,
-    title: 'Análise de Dados com IA',
-    desc: 'Transforme dados brutos em insights acionáveis com machine learning e visualização inteligente.',
+    icon: Briefcase,
+    title: 'Assistente Administrativo Remoto',
+    desc: 'Tenha uma pessoa à sua disposição para resolver sua rotina: gestão de agenda e e-mails, atendimento ao cliente, cobranças, emissão de propostas e notas, organização de documentos e planilhas, apoio em vendas e tarefas operacionais do dia a dia — tudo de forma remota.',
   },
   {
     icon: Globe,
-    title: 'Sistemas e Sites',
-    desc: 'Criação de sites, sistemas web e plataformas personalizadas com inteligência artificial integrada.',
-  },
-  {
-    icon: Image,
-    title: 'Criação de Imagens e Vídeos',
-    desc: 'Produção de conteúdos visuais com IA generativa, desde imagens realistas até vídeos profissionais.',
+    title: 'Sistemas, Sites e Aplicativos',
+    desc: 'Criação de sites, sistemas web, aplicativos e plataformas personalizadas.',
   },
 ]
 
@@ -42,7 +32,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item, i) => (
             <div
               key={i}
