@@ -38,7 +38,7 @@ export default function Hero() {
             href="#contato"
             className="group bg-ai-purple hover:bg-ai-accent text-white font-semibold px-8 py-3.5 rounded-full text-lg transition-all animate-pulse-glow inline-flex items-center gap-2"
           >
-            Garantir 15 dias grátis
+            Teste Gratuitamente
           </a>
 
         </div>
