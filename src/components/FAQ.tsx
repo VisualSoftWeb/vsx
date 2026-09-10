@@ -3,8 +3,8 @@ import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'Como funciona o período de teste grátis de 15 dias?',
-    a: 'Você experimenta a solução por 15 dias sem custo algum. Implementamos um piloto com dados reais do seu negócio para você ver os resultados antes de contratar.',
+    q: 'Como funciona o teste grátis?',
+    a: 'Você ganha 1000 créditos para testar sem custo algum. Experimente a solução com dados reais do seu negócio e veja os resultados antes de contratar.',
   },
   {
     q: 'Quanto tempo leva para implementar uma solução de IA?',
