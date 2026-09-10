@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: 'Quanto tempo leva para implementar uma solução de IA?',
-    a: 'Depende da complexidade do projeto. Soluções simples podem ficar prontas em 1-2 semanas. Projetos mais complexos levam de 1 a 3 meses. Durante a consultoria inicial, definimos um cronograma realista para você.',
+    a: 'É imediato! Assim que você chama no WhatsApp, ativamos sua solução e você já começa a usar na hora com seus 1000 créditos de teste.',
   },
   {
     q: 'Preciso ter uma equipe técnica para contratar?',
