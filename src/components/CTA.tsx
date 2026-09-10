@@ -3,7 +3,6 @@ import { MessageCircle } from 'lucide-react'
 const services = [
   { label: 'Agentes de IA Conversacional', msg: 'Olá! Tenho interesse no serviço de Agentes de IA Conversacional.' },
   { label: 'Assistente Administrativo Remoto', msg: 'Olá! Tenho interesse no serviço de Assistente Administrativo Remoto.' },
-  { label: 'Consultoria em IA', msg: 'Olá! Tenho interesse no serviço de Consultoria em IA.' },
   { label: 'Sistemas, Sites e Aplicativos', msg: 'Olá! Tenho interesse no serviço de Sistemas, Sites e Aplicativos.' },
   { label: 'Outro', msg: 'Olá! Tenho interesse em um serviço.' },
 ]
