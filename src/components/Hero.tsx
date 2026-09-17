@@ -44,7 +44,7 @@ export default function Hero() {
         </div>
 
         <p className="text-sm text-gray-400 mt-5">
-          Liberamos <span className="text-white font-semibold">1000 créditos</span> para você testar
+          Liberamos <span className="text-white font-semibold">550 créditos</span> para você testar
         </p>
 
 

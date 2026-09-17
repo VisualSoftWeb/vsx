@@ -4,11 +4,11 @@ import { ChevronDown } from 'lucide-react'
 const faqs = [
   {
     q: 'Como funciona o teste grátis?',
-    a: 'Você ganha 1000 créditos para testar sem custo algum. Experimente a solução com dados reais do seu negócio e veja os resultados antes de contratar.',
+    a: 'Você ganha 550 créditos para testar sem custo algum. Experimente a solução com dados reais do seu negócio e veja os resultados antes de contratar.',
   },
   {
     q: 'Quanto tempo leva para implementar uma solução de IA?',
-    a: 'É imediato! Assim que você chama no WhatsApp, ativamos sua solução e você já começa a usar na hora com seus 1000 créditos de teste.',
+    a: 'É imediato! Assim que você chama no WhatsApp, ativamos sua solução e você já começa a usar na hora com seus 550 créditos de teste.',
   },
   {
     q: 'Preciso ter uma equipe técnica para contratar?',
