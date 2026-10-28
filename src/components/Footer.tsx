@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 text-white font-bold text-lg mb-4">
               <Cpu className="w-6 h-6 text-ai-purple" />
-              <span>VSX/Tecnologia</span>
+              <span>VSX/AI</span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
               Transformando negócios através da Inteligência Artificial. Soluções sob medida para sua empresa.
@@ -52,10 +52,10 @@ export default function Footer() {
 
         <div className="mt-10 pt-8 border-t border-ai-border/50 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-600 text-sm">
-            © 2026 VSX/Tecnologia. Todos os direitos reservados.
+            © 2026 VSX/AI. Todos os direitos reservados.
           </p>
           <p className="text-gray-600 text-sm flex items-center gap-1">
-            Feito com <Heart className="w-4 h-4 text-red-500 fill-red-500" /> por VSX/Tecnologia
+            Feito com <Heart className="w-4 h-4 text-red-500 fill-red-500" /> por VSX/AI
           </p>
         </div>
       </div>
