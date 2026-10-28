@@ -17,7 +17,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-2 text-white font-bold text-lg">
             <Cpu className="w-6 h-6 text-ai-purple" />
-            <span>VSX/AI</span>
+            <span>VSX/Tecnologia</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">

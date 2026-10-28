@@ -9,7 +9,7 @@ export default function Speaker() {
         <div className="text-center mb-16">
           <span className="text-ai-cyan text-sm font-semibold tracking-widest uppercase">Sobre Nós</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mt-3">
-            Quem está por trás da VSX/AI
+            Quem está por trás da VSX/Tecnologia
           </h2>
         </div>
 
@@ -46,7 +46,7 @@ export default function Speaker() {
               <p className="text-gray-400 mt-5 leading-relaxed max-w-xl">
                 Com mais de 8 anos de experiência em tecnologia e Inteligência Artificial, Marconi Mac
                 liderou projetos de IA aplicada em grandes empresas, unindo inovação e estratégia para
-                transformar negócios através da tecnologia. Fundador da VSX/AI, hoje ajuda empresas a
+                transformar negócios através da tecnologia. Fundador da VSX/Tecnologia, hoje ajuda empresas a
                 implementarem soluções de IA que geram resultados reais.
               </p>
 
