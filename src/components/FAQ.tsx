@@ -3,28 +3,32 @@ import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'Como funciona o teste grátis?',
-    a: 'Você ganha 550 créditos para testar sem custo algum. Experimente a solução com dados reais do seu negócio e veja os resultados antes de contratar.',
+    q: 'Como funciona o teste grátis e os créditos?',
+    a: 'Ao criar sua conta, você recebe 550 créditos iniciais de cortesia. Com eles, você pode explorar a plataforma, adicionar agentes da nossa loja e testar conversas e fluxos com dados reais do seu negócio antes de escolher um plano pago.',
   },
   {
-    q: 'Quanto tempo leva para implementar uma solução de IA?',
-    a: 'É imediato! Assim que você chama no WhatsApp, ativamos sua solução e você já começa a usar na hora com seus 550 créditos de teste.',
+    q: 'O que é a Loja de Agentes?',
+    a: 'É o marketplace interno da plataforma onde você encontra inteligências artificiais especializadas e prontas para uso (como Vendas, Atendimento, Agendamento, Triagem de RH e Suporte Técnico). Basta clicar em "+ Adicionar" para que o agente passe a fazer parte do ecossistema da sua empresa instantaneamente.',
   },
   {
-    q: 'Preciso ter uma equipe técnica para contratar?',
-    a: 'Não! Cuidamos de tudo, da concepção à entrega. Você só precisa nos contar o problema que quer resolver. Nossa equipe técnica implementa e gerencia toda a solução.',
+    q: 'Preciso saber programar para configurar os agentes?',
+    a: 'Não! A plataforma foi desenhada no modelo No-Code (sem código). Os agentes pré-prontos já vêm com a inteligência estruturada para a função deles. Se você quiser ajustar o comportamento, basta alterar as instruções em texto comum, de forma muito simples e intuitiva.',
   },
   {
-    q: 'Vocês oferecem suporte após a entrega?',
-    a: 'Sim! Oferecemos planos de manutenção e suporte contínuo, incluindo monitoramento, atualizações e melhorias. Seu projeto continua evoluindo conosco.',
+    q: 'Posso criar um agente totalmente personalizado do meu jeito?',
+    a: 'Sim! Para isso, basta utilizar o Agente Custom na nossa loja. Ele funciona como uma folha em branco onde você define o nome, as instruções detalhadas, a base de conhecimento específica da sua empresa, o modelo de IA e os canais de atendimento que ele vai operar.',
   },
   {
-    q: 'Quais são as formas de pagamento?',
-    a: 'Aceitamos pagamento via boleto, cartão de crédito, PIX e transferência bancária. Para projetos maiores, parcelamos em até 12x.',
+    q: 'Como faço para conectar os agentes ao WhatsApp ou outros canais?',
+    a: 'Diretamente no painel do sistema, você encontra as opções de integração para conectar os agentes de forma rápida e automatizada aos principais canais de atendimento que seus clientes usam no dia a dia.',
   },
   {
-    q: 'Vocês atendem empresas de qualquer porte?',
-    a: 'Sim! Atendemos desde startups até grandes corporações. Cada solução é desenhada sob medida para o tamanho e necessidade do seu negócio.',
+    q: 'Como funcionam os planos e pagamentos?',
+    a: 'Trabalhamos com recargas de créditos e assinaturas flexíveis para acompanhar o volume de interações do seu negócio. Aceitamos PIX, cartão de crédito e boleto bancário, garantindo ativação imediata para você não perder tempo.',
+  },
+  {
+    q: 'Vocês dão suporte ao cliente?',
+    a: 'Sim! Damos todo o suporte necessário ao cliente, com uma equipe disponível para ajudar desde a configuração inicial dos seus agentes até dúvidas do dia a dia. Você nunca estará sozinho: estamos prontos para garantir que sua experiência na plataforma seja sempre tranquila.',
   },
 ]
 
@@ -57,7 +61,7 @@ export default function FAQ() {
                   <ChevronDown className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
                 </button>
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-48' : 'max-h-0'}`}
+                  className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96' : 'max-h-0'}`}
                 >
                   <p className="px-6 pb-4 text-gray-400 text-sm leading-relaxed">{faq.a}</p>
                 </div>
