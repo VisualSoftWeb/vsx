@@ -1,0 +1,17 @@
+:80, :3001 {
+	root * /srv
+	encode gzip zstd
+	file_server
+
+	@static {
+		path *.js *.css *.svg *.png *.jpg *.jpeg *.webp *.avif *.ico *.woff *.woff2 *.ttf
+	}
+	header @static Cache-Control "public, max-age=31536000, immutable"
+	header Cache-Control "no-cache"
+	header {
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+	}
+}

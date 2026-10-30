@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.gitignore
+*.log
+vite-dev.log
+.env
+Dockerfile
+docker-compose.yml
+deploy.sh
+.dockerignore
+README*
+plano-transformacao-evento-servicos.md
+Captura de tela *.png
