@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -30,23 +30,6 @@ export default function Hero() {
         <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 font-light italic">
           O mercado já mudou. Sua empresa vai liderar ou ficar para trás?
         </p>
-
-
-
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="#contato"
-            className="group bg-ai-purple hover:bg-ai-accent text-white font-semibold px-8 py-3.5 rounded-full text-lg transition-all animate-pulse-glow inline-flex items-center gap-2"
-          >
-            Teste Gratuitamente
-          </a>
-
-        </div>
-
-        <p className="text-sm text-gray-400 mt-5">
-          Liberamos <span className="text-white font-semibold">550 créditos</span> para você testar
-        </p>
-
 
       </div>
     </section>
