@@ -3,10 +3,6 @@ import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'Como funciona o teste grátis e os créditos?',
-    a: 'Ao criar sua conta, você recebe 550 créditos iniciais de cortesia. Com eles, você pode explorar a plataforma, adicionar agentes da nossa loja e testar conversas e fluxos com dados reais do seu negócio antes de escolher um plano pago.',
-  },
-  {
     q: 'O que é a Loja de Agentes?',
     a: 'É o marketplace interno da plataforma onde você encontra inteligências artificiais especializadas e prontas para uso (como Vendas, Atendimento, Agendamento, Triagem de RH e Suporte Técnico). Basta clicar em "+ Adicionar" para que o agente passe a fazer parte do ecossistema da sua empresa instantaneamente.',
   },
