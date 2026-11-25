@@ -8,8 +8,23 @@ const items = [
   },
   {
     icon: Briefcase,
-    title: 'Assistente Administrativo Remoto',
-    desc: 'Tenha uma pessoa à sua disposição para resolver sua rotina: gestão de agenda e e-mails, atendimento ao cliente, cobranças, emissão de propostas e notas, organização de documentos e planilhas, apoio em vendas e tarefas operacionais do dia a dia — tudo de forma remota.',
+    title: 'Assistente de Tecnologia e Soluções Digitais',
+    desc: `Simplifique sua rotina com o apoio da tecnologia!
+
+Oferecemos assistência tecnológica remota para empresas e profissionais que precisam de apoio na utilização, configuração e implementação de soluções digitais.
+
+Ajudamos você a resolver dificuldades tecnológicas, utilizar ferramentas e sistemas, explorar recursos de Inteligência Artificial, automatizar tarefas e melhorar seus processos de trabalho.
+
+O que podemos fazer por você:
+
+• Suporte e orientação no uso de sistemas e ferramentas digitais.
+• Configuração e organização de ferramentas tecnológicas.
+• Implantação e orientação no uso de soluções de Inteligência Artificial.
+• Apoio na criação e utilização de automações.
+• Organização de processos e atividades digitais.
+• Auxílio na integração de ferramentas e soluções online.
+
+Mais tecnologia, menos complicação.`,
   },
   {
     icon: Globe,
@@ -42,7 +57,7 @@ export default function About() {
                 <item.icon className="w-6 h-6 text-ai-purple" />
               </div>
               <h3 className="text-white font-semibold text-lg mb-2">{item.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+              <p className="text-gray-400 text-sm leading-relaxed whitespace-pre-line">{item.desc}</p>
             </div>
           ))}
         </div>
