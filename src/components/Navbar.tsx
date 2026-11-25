@@ -27,7 +27,7 @@ export default function Navbar() {
               </a>
             ))}
             <a href="#contato" className="bg-ai-purple hover:bg-ai-accent text-white text-sm font-semibold px-5 py-2 rounded-full transition-all hover:shadow-lg hover:shadow-ai-purple/30">
-              Solicitar Demonstração
+              Falar com atendente
             </a>
           </div>
 
@@ -46,7 +46,7 @@ export default function Navbar() {
               </a>
             ))}
             <a href="#contato" onClick={() => setOpen(false)} className="block text-center bg-ai-purple hover:bg-ai-accent text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all">
-              Solicitar Demonstração
+              Falar com atendente
             </a>
           </div>
         </div>
