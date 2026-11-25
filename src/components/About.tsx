@@ -13,18 +13,7 @@ const items = [
 
 Oferecemos assistência tecnológica remota para empresas e profissionais que precisam de apoio na utilização, configuração e implementação de soluções digitais.
 
-Ajudamos você a resolver dificuldades tecnológicas, utilizar ferramentas e sistemas, explorar recursos de Inteligência Artificial, automatizar tarefas e melhorar seus processos de trabalho.
-
-O que podemos fazer por você:
-
-• Suporte e orientação no uso de sistemas e ferramentas digitais.
-• Configuração e organização de ferramentas tecnológicas.
-• Implantação e orientação no uso de soluções de Inteligência Artificial.
-• Apoio na criação e utilização de automações.
-• Organização de processos e atividades digitais.
-• Auxílio na integração de ferramentas e soluções online.
-
-Mais tecnologia, menos complicação.`,
+Ajudamos você a resolver dificuldades tecnológicas, utilizar ferramentas e sistemas, explorar recursos de Inteligência Artificial, automatizar tarefas e melhorar seus processos de trabalho.`,
   },
   {
     icon: Globe,
